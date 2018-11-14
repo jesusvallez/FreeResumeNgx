@@ -9,7 +9,5 @@ export class AppComponent implements OnInit {
   title = 'FreeResumeNgx';
   myJSON = require('../assets/json/info.json');
 
-  ngOnInit(): void {
-    console.log(this.myJSON)
-  }
+  ngOnInit(): void { }
 }
