@@ -121,6 +121,14 @@
   .story:last-child {
     padding: 15px 25px 25px;
   }
+
+  .info {
+    .job-date {
+      .job {
+        width: 60%;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
