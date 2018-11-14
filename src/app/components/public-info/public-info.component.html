@@ -1,0 +1,17 @@
+<div *ngFor="let item of publicInfo" class="story">
+  <h1 *ngIf="item?.head" class="head">
+    <fa-icon class="icon" [icon]="item?.head?.icon"></fa-icon>{{ item?.head?.title }}
+  </h1>
+  <div class="info">
+    <div class="job-date">
+      <h2 class="job">{{ item?.job }}</h2>
+      <p class="date">{{ item?.date }}</p>
+    </div>
+
+    <div class="company-info">
+      <h3 class="company" [innerHtml]="item.company"></h3>
+      <a class="site" *ngIf="item.page" [href]="item.page">{{item?.page}}</a>
+      <div [innerHtml]="item.details | concatHtml | safeHtml" class="company-details"></div>
+    </div>
+  </div>
+</div>
