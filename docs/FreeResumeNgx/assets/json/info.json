@@ -1,0 +1,198 @@
+{
+  "profile": {
+    "name": "Jesús Vállez",
+    "ocupation": "Desarrollador Full Stack",
+    "photo": "assets/photo.jpg"
+  },
+  "privateInfo": [
+    {
+      "icon": [
+        "fas",
+        "birthday-cake"
+      ],
+      "type": "text",
+      "text": "24 de septiembre de 1991"
+    },
+    {
+      "icon": [
+        "fas",
+        "home"
+      ],
+      "type": "text",
+      "text": "Valencia, España"
+    },
+    {
+      "icon": [
+        "fas",
+        "plane"
+      ],
+      "type": "text",
+      "text": "Madrid, España"
+    },
+    {
+      "icon": [
+        "far",
+        "envelope"
+      ],
+      "type": "link",
+      "href": "mailto:jesusvg91@gmail.com",
+      "text": "jesusvg91@gmail.com"
+    },
+    {
+      "icon": [
+        "fab",
+        "linkedin-in"
+      ],
+      "type": "link",
+      "href": "https://www.linkedin.com/in/jesusvallez",
+      "text": "linkedin.com/in/jesusvallez"
+    },
+    {
+      "icon": [
+        "fab",
+        "github"
+      ],
+      "type": "link",
+      "href": "https://www.github.com/jesusvallez",
+      "text": "github.com/jesusvallez"
+    }
+  ],
+  "publicInfo": [
+    {
+      "head": {
+        "icon": [
+          "fas",
+          "briefcase"
+        ],
+        "title": "Experiencia Profesional"
+      },
+      "job": "Angular developer",
+      "date": "05/2018 – Presente",
+      "company": "BQ. Las Rozas (Madrid), España",
+      "page": "http://www.bmaker.es",
+      "details": [
+        "<p>Desarrollo de plataforma educativa orientada a centros de enseñanza y usuarios privados. Dicha herramienta está destinada al aprendizaje de la robótica y de su programación.</p>",
+        "<p>Todo esto está implementado con Angular como frontend framework y Node.js para backend ayudándose de una base de datos no relacional: mongo.</p>"
+      ]
+    },
+    {
+      "job": "Node.js developer",
+      "date": "02/2017 – Presente",
+      "company": "Team Queso ESPORTS S.L.",
+      "page": "https://www.teamqueso.com",
+      "details": [
+        "<p>Desarrollo de bots para la administración de usuarios en la plataforma Discord. Estos bots son capaces de facilitar tareas al Staff y hacer un seguimiento de estos dentro de la misma. También son capaces de recoger estadísticas del juego Clash Royale y utilizarlos para ayudar en las partidas competitivas a los jugadores profesionales. Esta información será mostrada en una aplicación WEB basada en Angular 4.</p>"
+      ]
+    },
+    {
+      "job": "PHP Fullstack developer",
+      "date": "08/2017 – 04/2018",
+      "company": "Lowpost S.L. Paterna (Valencia), España",
+      "page": "https://www.lowpost.com",
+      "details": [
+        "<p>Mantenimiento, desarrollo y testeo de una aplicación WEB basada en los Frameworks Drupal 7, Symfony 2.7 y AngularJS. Esta aplicación web se divide en dos grandes apartados: clientes y autores. El apartado de clientes está construido con AngularJS, ayudándose de una API pública (gracias a Symfony) y Drupal para el back-end. El apartado de autores, está implementado con drupal 7 y Symfony en su totalidad.</p>"
+      ]
+    },
+    {
+      "job": "PHP Fullstack developer",
+      "date": "12/2016 – 05/2017",
+      "company": "PORIB Gestión eficiente de la Salud S.A. Paterna (Valencia), España",
+      "page": "http://www.mediadd.es/",
+      "details": [
+        "<p>Durante el tiempo trabajado se han realizado diferentes proyectos:</p>",
+        "<ul><li>Desarrollo y mantenimiento de una aplicación WEB dentro del ámbito sanitario basada en el Framework Yii 1.1. Estas nuevas funcionalidades se basan en nuevos formularios dinámico o exportación de datos en la plataforma de reumatología.</li>",
+        "<li>Diseño, análisis, implementación y testeo de una aplicación WEB basadas en el Framework Yii 2.0 para la gestión de gastos internos de los empleados. Dicha aplicación registra los pagos mostrando al administrador estadísticas en forma de gráficas o exportación en XLS de los gastos de los empleados.</li></ul>"
+      ]
+    },
+    {
+      "job": "Investigador No Doctor",
+      "date": "09/2012 – 05/2016",
+      "company": "Laboratorio Integrado de Sistemas Inteligentes y Tecnologías de la Información de Tráfico (IR – LISITT Universidad de Valencia). Burjassot (Valencia), España",
+      "details": [
+        "<p>Durante el tiempo trabajado se han realizado diferentes proyectos:</p>",
+        "<ul><li>Mantenimiento y desarrollo WEB de dos aplicaciones basadas en el Framework Yii 1.1. <a href=\"http://www.mediadd.es/\">http://www.mediadd.es/</a>. Estas aplicaciones están relacionadas con el ámbito sanitario, tales como Reumatología o VIH. Entre las distintas funcionalidades se encuentran la exportación de datos en formato XLS, consultas masivas y eficientes sobre pacientes y medicamentos, o monitorización del coste económico y evolutivo del paciente hacia el hospitales.</li>",
+        "<li>Implementación de un módulo CATI para E-NQUEST con la tecnología Asterisk. <a href=\"https://www.e-nquest.com\">https://www.e-nquest.com</a>. Desarrollo de un gestor de colas telefónicas en JAVA y configuración del servidor mediante scripts AGI. Implementación de una interfaz gráfica para la gestión de las llamadas.</li></ul>"
+      ]
+    },
+    {
+      "head": {
+        "icon": [
+          "fas",
+          "pencil-alt"
+        ],
+        "title": "Experiencia Profesional"
+      },
+      "job": "Profesor de clases particulares",
+      "date": "01/2016 - 04/2018",
+      "company": "Valencia",
+      "details": [
+        "<p>Clases particulares a domicilio</p>",
+        "<ul><li>Programación PHP, HTML, CSS y JS (todos los niveles)</li><li>Programación Java (todos los niveles)</li><li>Programación C/C++ (nivel básico y medio)</li><li>Diseño e implementación de Base de datos</li></ul>"
+      ]
+    },
+    {
+      "head": {
+        "icon": [
+          "fa",
+          "graduation-cap"
+        ],
+        "title": "Formación Académica y Titulaciones"
+      },
+      "job": "Ingeniería Superior en Informática",
+      "date": "09/2009 - 01/2015",
+      "company": "Universitat de València, Valencia",
+      "details": [
+        "<p>Proyecto Final de Carrera: Diseño, análisis, implementación y testeo de un servicio WEB REST destinado a la integración de información de un CRM. Desarrollo sobre la tecnología J2EE y anotaciones Java JAX-RS para una mejor implementación de los servicios WEB. Documentación de los servicios web mediante el framework Swagger UI.</p>"
+      ]
+    }
+  ],
+  "skills": {
+    "title": "Habilidades",
+    "icon": [
+      "far",
+      "lightbulb"
+    ],
+    "aptitudes": [
+      {
+        "id": 10,
+        "title": "Angular",
+        "counter": 66
+      },
+      {
+        "id": 9,
+        "title": "Node.js",
+        "counter": 80
+      },
+      {
+        "id": 8,
+        "title": "Vuejs 2",
+        "counter": 55
+      },
+      {
+        "id": 7,
+        "title": "PHP",
+        "counter": 98
+      },
+      {
+        "id": 3,
+        "title": "PHPUnit",
+        "counter": 80
+      },
+      {
+        "id": 6,
+        "title": "Docker",
+        "counter": 62
+      },
+      {
+        "id": 5,
+        "title": "Vagrant",
+        "counter": 58
+      },
+      {
+        "id": 2,
+        "title": "Java EE",
+        "counter": 78
+      }
+    ]
+  }
+}
