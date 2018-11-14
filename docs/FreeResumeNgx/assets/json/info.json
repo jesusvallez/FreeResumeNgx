@@ -1,17 +1,25 @@
 {
   "profile": {
-    "name": "Jesús Vállez",
-    "ocupation": "Desarrollador Full Stack",
-    "photo": "assets/photo.jpg"
+    "name": "Aitor Esteve",
+    "photo": "https://randomuser.me/api/portraits/men/52.jpg",
+    "ocupation": "Fitnes and Wellness Coordinator"
   },
   "privateInfo": [
+    {
+      "icon": [
+        "fas",
+        "phone"
+      ],
+      "type": "text",
+      "text": "+34 648 00 00 00"
+    },
     {
       "icon": [
         "fas",
         "birthday-cake"
       ],
       "type": "text",
-      "text": "24 de septiembre de 1991"
+      "text": "01/07/1991"
     },
     {
       "icon": [
@@ -19,7 +27,7 @@
         "home"
       ],
       "type": "text",
-      "text": "Valencia, España"
+      "text": "Passeig Ceja, Las Fierro"
     },
     {
       "icon": [
@@ -27,7 +35,7 @@
         "plane"
       ],
       "type": "text",
-      "text": "Madrid, España"
+      "text": "Lake Carlo, Heloise"
     },
     {
       "icon": [
@@ -35,8 +43,8 @@
         "envelope"
       ],
       "type": "link",
-      "href": "mailto:jesusvg91@gmail.com",
-      "text": "jesusvg91@gmail.com"
+      "href": "mailto:aitoresteve@popsok.ml",
+      "text": "aitoresteve@popsok.ml"
     },
     {
       "icon": [
@@ -44,8 +52,8 @@
         "linkedin-in"
       ],
       "type": "link",
-      "href": "https://www.linkedin.com/in/jesusvallez",
-      "text": "linkedin.com/in/jesusvallez"
+      "href": "linkedin.com/in/aitoresteve",
+      "text": "linkedin.com/in/aitoresteve"
     },
     {
       "icon": [
@@ -53,8 +61,8 @@
         "github"
       ],
       "type": "link",
-      "href": "https://www.github.com/jesusvallez",
-      "text": "github.com/jesusvallez"
+      "href": "github.com/aitorestev",
+      "text": "github.com/aitorestev"
     }
   ],
   "publicInfo": [
@@ -64,134 +72,83 @@
           "fas",
           "briefcase"
         ],
-        "title": "Experiencia Profesional"
+        "title": "Integer ultrices"
       },
-      "job": "Angular developer",
-      "date": "05/2018 – Presente",
-      "company": "BQ. Las Rozas (Madrid), España",
-      "page": "http://www.bmaker.es",
+
+      "job": "Phasellus fermentum erat eget",
+      "date": "01/2017 – Present",
+      "company": "Duis convallis ante vitae augue vulputate",
+      "page": "https://www.google.com",
       "details": [
-        "<p>Desarrollo de plataforma educativa orientada a centros de enseñanza y usuarios privados. Dicha herramienta está destinada al aprendizaje de la robótica y de su programación.</p>",
-        "<p>Todo esto está implementado con Angular como frontend framework y Node.js para backend ayudándose de una base de datos no relacional: mongo.</p>"
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere libero quis condimentum venenatis. Donec tempus velit augue, eu vehicula tortor sollicitudin id. Donec ac facilisis libero. Nunc iaculis posuere est ut finibus. In aliquet hendrerit dapibus. Sed a viverra sem. Quisque lorem enim, rhoncus nec consectetur vitae, dignissim sed augue. Nunc feugiat at mi sed maximus. Curabitur sit amet ipsum nec massa suscipit hendrerit. Quisque et metus tincidunt, lobortis est ac, consequat turpis."
       ]
     },
     {
-      "job": "Node.js developer",
-      "date": "02/2017 – Presente",
-      "company": "Team Queso ESPORTS S.L.",
-      "page": "https://www.teamqueso.com",
+      "job": "Maecenas fermentum diam eu interdum",
+      "date": "04/2016 – 01/2017",
+      "company": "Curabitur vel nisi eget risus tristique semper",
+      "page": "ttps://www.google.com",
       "details": [
-        "<p>Desarrollo de bots para la administración de usuarios en la plataforma Discord. Estos bots son capaces de facilitar tareas al Staff y hacer un seguimiento de estos dentro de la misma. También son capaces de recoger estadísticas del juego Clash Royale y utilizarlos para ayudar en las partidas competitivas a los jugadores profesionales. Esta información será mostrada en una aplicación WEB basada en Angular 4.</p>"
+        "Suspendisse quis turpis justo. Vivamus a risus eros. Donec mattis quam vitae lectus facilisis, id ornare erat interdum. Sed eu enim sit amet massa mattis ullamcorper eu sagittis lorem. Vestibulum consequat metus ut diam bibendum sodales. Morbi eu cursus urna. In facilisis ex non pulvinar posuere. Mauris ornare nec nibh quis efficitur."
       ]
     },
     {
-      "job": "PHP Fullstack developer",
-      "date": "08/2017 – 04/2018",
-      "company": "Lowpost S.L. Paterna (Valencia), España",
-      "page": "https://www.lowpost.com",
+      "job": "Mauris suscipit risus",
+      "date": "01/2015 – 04/2016",
+      "company": "Suspendisse vehicula lorem vitae metus tincidunt",
       "details": [
-        "<p>Mantenimiento, desarrollo y testeo de una aplicación WEB basada en los Frameworks Drupal 7, Symfony 2.7 y AngularJS. Esta aplicación web se divide en dos grandes apartados: clientes y autores. El apartado de clientes está construido con AngularJS, ayudándose de una API pública (gracias a Symfony) y Drupal para el back-end. El apartado de autores, está implementado con drupal 7 y Symfony en su totalidad.</p>"
+        "Suspendisse a nisl est. Quisque semper convallis mi eget aliquam. Nunc hendrerit mauris in rutrum fringilla. Etiam maximus erat quis massa efficitur cursus. Maecenas fringilla libero quis tempus porta. Integer tempor facilisis lorem at posuere. Aliquam mi eros, suscipit vel vestibulum sit amet, mollis in dui.",
+        "Ut ut dolor ut enim varius ultrices. Donec mattis ipsum aliquam ullamcorper fringilla. Pellentesque porta ornare dui quis porta. Praesent metus sem, cursus vel neque sit amet, viverra consectetur mi. Curabitur sed commodo leo. Pellentesque porta faucibus felis elementum luctus. Curabitur velit neque, cursus interdum purus nec, dapibus egestas enim."
       ]
     },
     {
-      "job": "PHP Fullstack developer",
-      "date": "12/2016 – 05/2017",
-      "company": "PORIB Gestión eficiente de la Salud S.A. Paterna (Valencia), España",
-      "page": "http://www.mediadd.es/",
+      "icon": [
+        "fas",
+        "pencil-alt"
+      ],
+      "title": "sit amet viverra enim efficitur",
+      "job": "Donec vehicula felis vehicula",
+      "date": "11/2016 - Present",
       "details": [
-        "<p>Durante el tiempo trabajado se han realizado diferentes proyectos:</p>",
-        "<ul><li>Desarrollo y mantenimiento de una aplicación WEB dentro del ámbito sanitario basada en el Framework Yii 1.1. Estas nuevas funcionalidades se basan en nuevos formularios dinámico o exportación de datos en la plataforma de reumatología.</li>",
-        "<li>Diseño, análisis, implementación y testeo de una aplicación WEB basadas en el Framework Yii 2.0 para la gestión de gastos internos de los empleados. Dicha aplicación registra los pagos mostrando al administrador estadísticas en forma de gráficas o exportación en XLS de los gastos de los empleados.</li></ul>"
+        "Nam sed neque vitae ligula hendrerit imperdiet.",
+        "<ul><li>In quis ligula eu ipsum convallis rutrum a id lacus.</li><li>Etiam lacinia eros placerat, fermentum ex quis, imperdiet augue.</li><li>Sed faucibus metus vel nisi accumsan, at porttitor diam fringilla.</li><li>Integer facilisis justo consequat ipsum mollis sollicitudin.</li></ul>"
       ]
     },
     {
-      "job": "Investigador No Doctor",
-      "date": "09/2012 – 05/2016",
-      "company": "Laboratorio Integrado de Sistemas Inteligentes y Tecnologías de la Información de Tráfico (IR – LISITT Universidad de Valencia). Burjassot (Valencia), España",
-      "details": [
-        "<p>Durante el tiempo trabajado se han realizado diferentes proyectos:</p>",
-        "<ul><li>Mantenimiento y desarrollo WEB de dos aplicaciones basadas en el Framework Yii 1.1. <a href=\"http://www.mediadd.es/\">http://www.mediadd.es/</a>. Estas aplicaciones están relacionadas con el ámbito sanitario, tales como Reumatología o VIH. Entre las distintas funcionalidades se encuentran la exportación de datos en formato XLS, consultas masivas y eficientes sobre pacientes y medicamentos, o monitorización del coste económico y evolutivo del paciente hacia el hospitales.</li>",
-        "<li>Implementación de un módulo CATI para E-NQUEST con la tecnología Asterisk. <a href=\"https://www.e-nquest.com\">https://www.e-nquest.com</a>. Desarrollo de un gestor de colas telefónicas en JAVA y configuración del servidor mediante scripts AGI. Implementación de una interfaz gráfica para la gestión de las llamadas.</li></ul>"
-      ]
-    },
-    {
-      "head": {
-        "icon": [
-          "fas",
-          "pencil-alt"
-        ],
-        "title": "Experiencia Profesional"
-      },
-      "job": "Profesor de clases particulares",
-      "date": "01/2016 - 04/2018",
-      "company": "Valencia",
-      "details": [
-        "<p>Clases particulares a domicilio</p>",
-        "<ul><li>Programación PHP, HTML, CSS y JS (todos los niveles)</li><li>Programación Java (todos los niveles)</li><li>Programación C/C++ (nivel básico y medio)</li><li>Diseño e implementación de Base de datos</li></ul>"
-      ]
-    },
-    {
-      "head": {
-        "icon": [
-          "fa",
-          "graduation-cap"
-        ],
-        "title": "Formación Académica y Titulaciones"
-      },
-      "job": "Ingeniería Superior en Informática",
+      "icon": [
+        "fa",
+        "graduation-cap"
+      ],
+      "title": "Pellentesque sed arcu eleifend",
+      "job": "Etiam pharetra urna nec posuere hendrerit",
       "date": "09/2009 - 01/2015",
-      "company": "Universitat de València, Valencia",
+      "company": "Pellentesque imperdiet mauris ac mattis pulvinar",
       "details": [
-        "<p>Proyecto Final de Carrera: Diseño, análisis, implementación y testeo de un servicio WEB REST destinado a la integración de información de un CRM. Desarrollo sobre la tecnología J2EE y anotaciones Java JAX-RS para una mejor implementación de los servicios WEB. Documentación de los servicios web mediante el framework Swagger UI.</p>"
+        "Donec pulvinar ex sed lectus blandit scelerisque"
       ]
     }
   ],
   "skills": {
-    "title": "Habilidades",
+    "title": "Nam scelerisque risus",
     "icon": [
       "far",
       "lightbulb"
     ],
     "aptitudes": [
       {
-        "id": 10,
-        "title": "Angular",
-        "counter": 66
-      },
-      {
-        "id": 9,
-        "title": "Node.js",
-        "counter": 80
-      },
-      {
-        "id": 8,
-        "title": "Vuejs 2",
-        "counter": 55
-      },
-      {
-        "id": 7,
-        "title": "PHP",
-        "counter": 98
-      },
-      {
-        "id": 3,
-        "title": "PHPUnit",
-        "counter": 80
-      },
-      {
-        "id": 6,
-        "title": "Docker",
-        "counter": 62
-      },
-      {
-        "id": 5,
-        "title": "Vagrant",
-        "counter": 58
+        "id": 1,
+        "title": "Sed rutrum",
+        "counter": 35
       },
       {
         "id": 2,
-        "title": "Java EE",
-        "counter": 78
+        "title": "Orci vel",
+        "counter": 85
+      },
+      {
+        "id": 3,
+        "title": "Elementum",
+        "counter": 60
       }
     ]
   }
