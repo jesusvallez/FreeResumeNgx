@@ -1,8 +1,10 @@
+@import 'base/variables';
+
 :host {
   display: flex;
   flex-direction: column;
   padding: 20px 10px;
-  background-color: #35849a;
+  background-color: $primary;
 }
 
 .private-item {
@@ -12,7 +14,7 @@
   align-items: center;
 
   .icon {
-    color: #fff;
+    color: $white;
     font-size: 20px;
     width: 40px;
     margin-left: 15px;
@@ -20,12 +22,12 @@
   }
 
   a, p {
-    color: #fff;
+    color: $white;
     font-size: 12px;
   }
 
   a:hover {
-    color: #ccc;
+    color: $grey-normal;
   }
 }
 
@@ -73,7 +75,7 @@
     }
 
     .icon, a, p {
-      color: #3e4b50;
+      color: $print-dark;
     }
 
     a {

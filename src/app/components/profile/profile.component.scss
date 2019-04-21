@@ -1,14 +1,16 @@
+@import 'base/variables';
+
 :host {
   display: flex;
   padding: 20px 10px;
   justify-content: center;
-  background-color: #005267;
+  background-color: $primary-dark;
   flex-direction: column;
   align-items: center;
 }
 
 h1, h2, h3, h4 {
-  color: #fff;
+  color: $white;
   text-align: center;
 }
 
@@ -22,7 +24,7 @@ h2, h3, h4 {
 }
 
 .profile-image {
-  border: 2px solid #fff;
+  border: 2px solid $white;
   border-radius: 50%;
   margin-bottom: 20px;
   width: 140px;
@@ -42,10 +44,10 @@ h2, h3, h4 {
   }
 
   h1, h2, h3, h4 {
-    color: #3e4b50;
+    color: $print-dark;
   }
 
   .profile-image {
-    border: 1px solid #3e4b50;
+    border: 1px solid $print-dark;
   }
 }
