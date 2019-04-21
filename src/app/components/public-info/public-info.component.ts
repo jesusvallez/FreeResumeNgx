@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./public-info.component.scss']
 })
 export class PublicInfoComponent {
-  @Input() public publicInfo
+  @Input() public publicInfo;
 
   constructor() { }
 }

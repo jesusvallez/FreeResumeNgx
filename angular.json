@@ -22,13 +22,19 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/app/styles"
+              ]
+            },
             "assets": [
               "src/assets"
             ],
+            "scripts": [],
             "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+              "src/styles.scss",
+              "src/app/styles/_imports.scss"
+            ]
           },
           "configurations": {
             "production": {
@@ -81,12 +87,18 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
-            "styles": [
-              "src/styles.scss"
-            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/app/styles"
+              ]
+            },
             "scripts": [],
             "assets": [
               "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss",
+              "src/app/styles/_imports.scss"
             ]
           }
         },

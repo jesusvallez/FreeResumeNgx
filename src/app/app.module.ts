@@ -13,6 +13,8 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { SafeHtmlPipe } from './pipes/safeHtml/safe-html.pipe';
 import { ConcatHtmlPipe } from './pipes/concatHtml/concat-html.pipe';
+import { HttpClientModule } from '@angular/common/http';
+import { SafeUrlPipe } from './pipes/safeUrl/safe-url.pipe';
 
 library.add(fas, far, fab);
 
@@ -23,11 +25,13 @@ library.add(fas, far, fab);
     PrivateInfoComponent,
     PublicInfoComponent,
     SafeHtmlPipe,
-    ConcatHtmlPipe
+    ConcatHtmlPipe,
+    SafeUrlPipe
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
