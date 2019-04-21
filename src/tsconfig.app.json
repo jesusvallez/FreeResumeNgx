@@ -3,7 +3,12 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "paths": {
-      "@app/*": ["app/*"],
+      "@app/*": [
+        "app/*"
+      ],
+      "core-js/es7/reflect": [
+        "./node_modules/core-js/proposals/reflect-metadata"
+      ]
     },
     "types": [
       "node"
