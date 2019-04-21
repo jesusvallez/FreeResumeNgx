@@ -8,12 +8,10 @@ import { first } from 'rxjs/operators'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  myJSON
   title = 'FreeResumeNgx'
-  myJSON = require('../assets/json/info.json')
 
-  constructor(private _info: InfoService) {
-
-  }
+  constructor(private _info: InfoService) { }
 
   ngOnInit(): void {
     this.myJSON = this._info.getJSONInfo()
