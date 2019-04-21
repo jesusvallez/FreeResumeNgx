@@ -1,10 +1,10 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core'
 
 @Pipe({
   name: 'concatHtml'
 })
 export class ConcatHtmlPipe implements PipeTransform {
   transform(value: any, args?: any): any {
-    return value.join('');
+    return value.join('')
   }
 }

@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core'
 
 @Component({
   selector: 'app-private-info',
@@ -6,7 +6,7 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./private-info.component.scss']
 })
 export class PrivateInfoComponent {
-  @Input() public privateInfo;
+  @Input() public privateInfo
 
   constructor() { }
 }
