@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'app-public-info',
@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./public-info.component.scss']
 })
 export class PublicInfoComponent {
-  @Input() public publicInfo
+  @Input() public publicInfo;
 
   constructor() { }
 }

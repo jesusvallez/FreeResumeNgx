@@ -31,11 +31,6 @@ h2, h3, h4 {
   }
 }
 
-// @page {
-//   size: 210mm 297mm;
-//   margin: 27mm 16mm 27mm 16mm;
-// }
-
 @media print
 {
     @page {
@@ -43,10 +38,9 @@ h2, h3, h4 {
     }
 
     html, body {
-        width: 210mm;
-        /* height: 297mm; */
-        height: 282mm;
-        background: #FFF;
-        overflow:visible;
+      width: 210mm;
+      height: 282mm;
+      background: #ffffff;
+      overflow: visible;
     }
 }

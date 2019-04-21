@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { InfoService } from './services/info.service'
+import { first } from 'rxjs/operators'
 
 @Component({
   selector: 'app-root',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'FreeResumeNgx';
-  myJSON = require('../assets/json/info.json');
+  myJSON
+  title = 'FreeResumeNgx'
 
-  ngOnInit(): void { }
+  constructor(private _info: InfoService) { }
+
+  ngOnInit(): void {
+    this.myJSON = this._info.getJSONInfo()
+  }
 }
