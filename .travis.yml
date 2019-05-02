@@ -1,17 +1,29 @@
 language: node_js
+
 node_js:
   - "10.8"
+
 dist: trusty
+
 sudo: required
+
+os:
+  - linux
+  - osx
+  - windows
+
 branches:
   only:
   - master
+
 before_script:
   - npm install -g @angular/cli
+
 script:
   - ng lint
   - npm install codecov -g
   - npm run test:headless
   - ng build --prod
+
 after_success:
   - codecov
