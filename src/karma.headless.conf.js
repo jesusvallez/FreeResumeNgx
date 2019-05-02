@@ -10,7 +10,7 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
-      require("karma-spec-reporter"),
+      require('karma-spec-reporter'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     parallelOptions: {
@@ -82,5 +82,5 @@ module.exports = function (config) {
     // More info about disconnected issue is here:
     // https://github.com/karma-runner/karma-chrome-launcher/issues/154
     // https://github.com/karma-runner/karma/issues/2652
-  });
-};
+  })
+}
