@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  app:
+    build: .
+    command: bash -c "npm rebuild node-sass && npm run start:docker"
+    ports:
+      - "4200:4200"
+      - "49153:49153"
+    volumes:
+      - "./:/usr/app/"

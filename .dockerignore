@@ -1,0 +1,11 @@
+.dockerignore
+./log
+./tmp
+.git
+*Dockerfile*
+*docker-compose*
+node_modules
+package.lock.json
+yarn.lock
+coverage
+docs

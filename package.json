@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "start:noreload": "ng serve --host 0.0.0.0 --disable-host-check --live-reload false",
+    "start:docker": "ng serve --host 0.0.0.0 --poll 500",
     "build": "ng build --prod",
     "build:github": "ng build --prod --base-href 'https://jesusvallez.github.io/FreeResumeNgx/'",
     "test": "ng test",
