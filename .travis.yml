@@ -12,11 +12,10 @@ branches:
   - master
 
 before_script:
-  - npm install -g @angular/cli
+  - npm install -g @angular/cli codecov
 
 script:
   - ng lint
-  - npm install codecov -g
   - npm run test:headless
   - ng build --prod
 
