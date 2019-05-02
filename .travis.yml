@@ -10,4 +10,8 @@ before_script:
   - npm install -g @angular/cli
 script:
   - ng lint
+  - npm install codecov -g
+  - npm run test:headless
   - ng build --prod
+after_success:
+  - codecov

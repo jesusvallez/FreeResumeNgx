@@ -11,7 +11,6 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
       require("karma-spec-reporter"),
-      require('karma-istanbul-threshold'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     parallelOptions: {
