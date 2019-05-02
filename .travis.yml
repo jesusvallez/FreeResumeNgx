@@ -7,11 +7,6 @@ dist: trusty
 
 sudo: required
 
-os:
-  - linux
-  - osx
-  - windows
-
 branches:
   only:
   - master
