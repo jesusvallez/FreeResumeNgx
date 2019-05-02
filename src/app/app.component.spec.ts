@@ -10,7 +10,6 @@ describe('AppComponent', () => {
   beforeEach(() => {
     const infoServiceStub = { getJSONInfo: () => ({}) }
 
-
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],
       declarations: [AppComponent],
@@ -24,9 +23,6 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy()
   })
 
-  it('title defaults to: FreeResumeNgx', () => {
-    expect(component.title).toEqual('FreeResumeNgx')
-  })
 
   describe('ngOnInit', () => {
     it('makes expected calls', () => {
