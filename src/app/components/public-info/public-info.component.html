@@ -10,8 +10,8 @@
 
     <div class="company-info">
       <h3 class="company" [innerHtml]="item.company"></h3>
-      <a *ngIf="item.page" class="site" [href]="item.page | safeUrl">{{item?.page}}</a>
-      <div [innerHtml]="item.details | concatHtml | safeHtml" class="company-details"></div>
+      <a *ngIf="item?.page" class="site" [href]="item?.page | safeUrl">{{item?.page}}</a>
+      <div [innerHtml]="item?.details | concatHtml | safeHtml" class="company-details"></div>
     </div>
   </div>
 </div>

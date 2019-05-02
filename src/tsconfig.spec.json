@@ -2,12 +2,20 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/spec",
+    "typeRoots": [
+      "./typings.d.ts"
+    ],
     "types": [
       "jasmine",
       "node"
     ],
     "paths": {
-      "@app/*": ["app/*"],
+      "@app/*": [
+        "app/*"
+      ],
+      "core-js/es7/reflect": [
+        "./node_modules/core-js/proposals/reflect-metadata"
+      ]
     }
   },
   "files": [

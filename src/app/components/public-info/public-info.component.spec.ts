@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-
 import { PublicInfoComponent } from './public-info.component'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 describe('PublicInfoComponent', () => {
   let component: PublicInfoComponent
@@ -8,7 +8,8 @@ describe('PublicInfoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PublicInfoComponent ]
+      declarations: [ PublicInfoComponent ],
+      imports: [ FontAwesomeModule ]
     })
     .compileComponents()
   }))

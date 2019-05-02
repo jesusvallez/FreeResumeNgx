@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { InfoService } from './services/info.service'
-import { first } from 'rxjs/operators'
+import { JSONObject } from './interfaces/json.interface'
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { first } from 'rxjs/operators'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  myJSON
+  myJSON: JSONObject
   title = 'FreeResumeNgx'
 
   constructor(private _info: InfoService) { }

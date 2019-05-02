@@ -1,6 +1,6 @@
 <ng-container *ngFor="let item of privateInfo">
   <div class="private-item">
-    <fa-icon class="icon"[icon]="item.icon"></fa-icon>
+    <fa-icon class="icon" [icon]="item.icon"></fa-icon>
     <p *ngIf="item.type === 'text'">{{item.text}}</p>
     <a *ngIf="item.type === 'link'" [href]="item.href">{{item.text}}</a>
   </div>

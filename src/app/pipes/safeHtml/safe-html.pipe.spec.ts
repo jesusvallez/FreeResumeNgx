@@ -1,19 +1,19 @@
 import { TestBed, inject } from '@angular/core/testing'
 import { DomSanitizer } from '@angular/platform-browser'
-import { SafeUrlPipe } from './safe-url.pipe'
+import { SafeHtmlPipe } from './safe-html.pipe'
 
-describe('SafeUrlPipe', () => {
-  let pipe: SafeUrlPipe
+describe('SafeHtmlPipe', () => {
+  let pipe: SafeHtmlPipe
 
   beforeEach(() => {
-    const domSanitizerStub = { bypassSecurityTrustUrl: () => ({}) }
+    const domSanitizerStub = { bypassSecurityTrustHtml: () => ({}) }
     TestBed.configureTestingModule({
       providers: [
-        SafeUrlPipe,
+        SafeHtmlPipe,
         { provide: DomSanitizer, useValue: domSanitizerStub }
       ]
     })
-    pipe = TestBed.get(SafeUrlPipe)
+    pipe = TestBed.get(SafeHtmlPipe)
   })
 
   it('can load instance', () => {
@@ -21,8 +21,8 @@ describe('SafeUrlPipe', () => {
   })
 
   it('should run #transform', inject([DomSanitizer], (domSanitizer: DomSanitizer) => {
-    const value = 'javascript:alert(1)'
-    const trusted = domSanitizer.bypassSecurityTrustUrl(value)
+    const value = '<table class="testing"></table>'
+    const trusted = domSanitizer.bypassSecurityTrustHtml(value)
     expect(pipe.transform(value)).toEqual(trusted)
   }))
 })

@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core'
   name: 'concatHtml'
 })
 export class ConcatHtmlPipe implements PipeTransform {
-  transform(value: any, args?: any): any {
+  transform(value: string[]): any {
     return value.join('')
   }
 }

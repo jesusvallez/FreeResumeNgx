@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
+import { JSONObject } from '../interfaces/json.interface.js'
 import info from '../../assets/json/info.json'
 
 @Injectable({
@@ -7,13 +8,11 @@ import info from '../../assets/json/info.json'
 })
 export class InfoService {
 
-  constructor(private http: HttpClient) { }
+  jsonInfo: JSONObject = info
 
-  getInfo () {
-    return this.http.get('https://raw.githubusercontent.com/jesusvallez/FreeResumeNgx/master/docs/assets/json/info.json')
-  }
+  constructor() { }
 
-  getJSONInfo () {
-    return info
+  getJSONInfo (): JSONObject {
+    return this.jsonInfo
   }
 }
