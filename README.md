@@ -1,5 +1,5 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/jesusvallez/FreeResumeNgx.svg)
-![Travis (.org)](https://img.shields.io/travis/jesusvallez/FreeResumeNgx.svg)
+[![Build Status](https://travis-ci.org/jesusvallez/FreeResumeNgx.svg?branch=master)](https://travis-ci.org/jesusvallez/FreeResumeNgx)
 [![codecov](https://img.shields.io/codecov/c/github/jesusvallez/FreeResumeNgx.svg)](https://codecov.io/gh/jesusvallez/FreeResumeNgx)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c6e3a36a4f1d46b199d8049d8cc6986a)](https://www.codacy.com/app/jesusvallez/FreeResumeNgx?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesusvallez/FreeResumeNgx&amp;utm_campaign=Badge_Grade)
 [![dependencies Status](https://david-dm.org/jesusvallez/FreeResumeNgx/status.svg)](https://david-dm.org/jesusvallez/FreeResumeNgx)
