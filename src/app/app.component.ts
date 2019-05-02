@@ -9,7 +9,6 @@ import { JSONObject } from './interfaces/json.interface'
 })
 export class AppComponent implements OnInit {
   myJSON: JSONObject
-  title = 'FreeResumeNgx'
 
   constructor(private _info: InfoService) { }
 
