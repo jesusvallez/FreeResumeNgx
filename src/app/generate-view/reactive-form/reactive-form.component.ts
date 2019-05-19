@@ -30,7 +30,7 @@ export class ReactiveFormComponent implements OnInit {
       }),
       privateInfo: this.formBuilder.array([
         this.createPrivateInfo()
-      ]),
+      ])
     },
     {
       validators: [ ]
@@ -41,7 +41,8 @@ export class ReactiveFormComponent implements OnInit {
     return this.formBuilder.group({
       icon: new FormControl('', []),
       type: new FormControl('', []),
-      text: new FormControl('', []),
+      href: new FormControl('', []),
+      text: new FormControl('', [])
     })
   }
 

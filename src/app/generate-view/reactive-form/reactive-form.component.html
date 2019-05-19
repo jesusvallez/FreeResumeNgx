@@ -13,10 +13,6 @@
       </button>
     </mat-form-field>
 
-    <!-- <mat-form-field formGroupName="profile">
-      <input matInput placeholder="Foto" type="text" formControlName="photo">
-    </mat-form-field> -->
-
     <mat-form-field formGroupName="profile">
       <input matInput placeholder="Ocupacion" type="text" formControlName="ocupation">
     </mat-form-field>
@@ -30,7 +26,14 @@
       </mat-form-field>
 
       <mat-form-field [formGroupName]="i">
-        <input matInput placeholder="Tipo" type="text" formControlName="type">
+        <mat-select placeholder="Tipo" formControlName="type">
+          <mat-option value="text">Texto</mat-option>
+          <mat-option value="link">Link</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field *ngIf="p.controls.type.value === 'link'" [formGroupName]="i">
+        <input matInput placeholder="Link" type="text" formControlName="href">
       </mat-form-field>
 
       <mat-form-field [formGroupName]="i">
