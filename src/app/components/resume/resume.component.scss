@@ -1,0 +1,74 @@
+@import 'base/variables';
+
+.profile {
+  display: flex;
+  margin: 40px auto;
+  max-width: 980px;
+  background-color: #fff;
+
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
+
+  .user-profile {
+    width: 25%;
+    background-color: $primary;
+  }
+
+  .cv {
+    width: 75%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .profile {
+    max-width: inherit;
+    flex-direction: column;
+    margin: 0;
+
+    .user-profile {
+      width: inherit;
+    }
+
+    .cv {
+      width: inherit;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .profile {
+    max-width: 760px;
+
+    .user-profile {
+      width: 30%;
+    }
+
+    .cv {
+      width: 70%;
+    }
+  }
+}
+
+@media print  {
+  .profile {
+    margin: 0;
+    max-width: inherit;
+    flex-direction: column;
+
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+
+    .user-profile {
+      display: flex;
+      width: inherit;
+      justify-content: center;
+      background-color: transparent;
+    }
+
+    .cv {
+      width: inherit;
+    }
+  }
+}

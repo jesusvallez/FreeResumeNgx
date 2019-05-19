@@ -1,0 +1,51 @@
+
+<form class="form" [formGroup]="formGroup">
+  <fieldset class="fieldset profile">
+    <legend class="title">Perfil personal</legend>
+    <mat-form-field formGroupName="profile">
+      <input matInput placeholder="Nombre" type="text" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field formGroupName="profile">
+      <ngx-mat-file-input #removableInput placeholder="Foto" formControlName="photo"></ngx-mat-file-input>
+      <button mat-icon-button matSuffix *ngIf="!removableInput.empty" (click)="removableInput.clear($event)">
+        <mat-icon>clear</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <!-- <mat-form-field formGroupName="profile">
+      <input matInput placeholder="Foto" type="text" formControlName="photo">
+    </mat-form-field> -->
+
+    <mat-form-field formGroupName="profile">
+      <input matInput placeholder="Ocupacion" type="text" formControlName="ocupation">
+    </mat-form-field>
+  </fieldset>
+
+  <fieldset class="fieldset private-info">
+    <legend class="title">Datos privados</legend>
+    <div class="wrap--private-info" formArrayName="privateInfo" *ngFor="let p of formGroup.get('privateInfo').controls; let i = index;">
+      <mat-form-field [formGroupName]="i">
+        <input matInput placeholder="Icono" type="text" formControlName="icon">
+      </mat-form-field>
+
+      <mat-form-field [formGroupName]="i">
+        <input matInput placeholder="Tipo" type="text" formControlName="type">
+      </mat-form-field>
+
+      <mat-form-field [formGroupName]="i">
+        <input matInput placeholder="Texto" type="text" formControlName="text">
+      </mat-form-field>
+    </div>
+
+    <div class="button-row">
+      <button mat-stroked-button color="warn" (click)="removeLastPrivateInfo()">Eliminar</button>
+      <button mat-stroked-button color="primary" (click)="addPrivateInfo()">Añadir</button>
+    </div>
+  </fieldset>
+
+  <div class="submit-row">
+    <button mat-stroked-button color="primary" (click)="onSubmit()">Generar JSON</button>
+  </div>
+</form>
+
