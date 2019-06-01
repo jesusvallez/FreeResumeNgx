@@ -59,7 +59,7 @@
       }
     }
 
-    /deep/ .company-details {
+    ::ng-deep .company-details {
       margin-top: 10px;
 
       p {
