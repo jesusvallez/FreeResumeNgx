@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { PublicInfoInterface } from 'src/app/interfaces/publicInfo.interface.'
+import { PublicInfoInterface } from '@app/interfaces/publicInfo.interface.'
 
 @Component({
   selector: 'app-public-info',

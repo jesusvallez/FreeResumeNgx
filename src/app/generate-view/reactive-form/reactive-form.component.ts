@@ -10,6 +10,7 @@ export class ReactiveFormComponent implements OnInit {
 
   formGroup: FormGroup
   privateInfoArray: FormArray
+  previewLoadFile: any
 
   constructor(private formBuilder: FormBuilder, private cd: ChangeDetectorRef) { }
 
@@ -71,6 +72,17 @@ export class ReactiveFormComponent implements OnInit {
         this.cd.markForCheck()
       }
     }
+  }
+
+  onFileSelected(event) {
+    const reader = new FileReader()
+    this.previewLoadFile = null
+
+    reader.onload = (onloadEvent: any) => {
+      this.previewLoadFile = onloadEvent.target.result
+    }
+
+    reader.readAsDataURL(<File>event.target.files[0])
   }
 
   onSubmit () {

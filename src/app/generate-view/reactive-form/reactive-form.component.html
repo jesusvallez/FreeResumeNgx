@@ -2,20 +2,41 @@
 <form class="form" [formGroup]="formGroup">
   <fieldset class="fieldset profile">
     <legend class="title">Perfil personal</legend>
-    <mat-form-field formGroupName="profile">
-      <input matInput placeholder="Nombre" type="text" formControlName="name">
-    </mat-form-field>
 
-    <mat-form-field formGroupName="profile">
-      <ngx-mat-file-input #removableInput placeholder="Foto" formControlName="photo"></ngx-mat-file-input>
-      <button mat-icon-button matSuffix *ngIf="!removableInput.empty" (click)="removableInput.clear($event)">
-        <mat-icon>clear</mat-icon>
-      </button>
-    </mat-form-field>
+    <div class="container">
+      <div class="left">
+        <mat-form-field formGroupName="profile">
+          <input matInput placeholder="Nombre" type="text" formControlName="name">
+        </mat-form-field>
 
-    <mat-form-field formGroupName="profile">
-      <input matInput placeholder="Ocupacion" type="text" formControlName="ocupation">
-    </mat-form-field>
+        <mat-form-field formGroupName="profile">
+          <input matInput placeholder="Ocupacion" type="text" formControlName="ocupation">
+        </mat-form-field>
+
+        <mat-form-field formGroupName="profile">
+          <ngx-mat-file-input #removableInput placeholder="Foto" formControlName="photo"></ngx-mat-file-input>
+          <button mat-icon-button matSuffix *ngIf="!removableInput.empty" (click)="removableInput.clear($event)">
+            <mat-icon>clear</mat-icon>
+          </button>
+
+
+
+
+        </mat-form-field>
+
+        <button type="button" mat-raised-button (click)="fileInput.click()">Choose File</button>
+          <input hidden (change)="onFileSelected()" #fileInput type="file" id="file">
+      </div>
+
+      <div class="right">
+        <app-profile-picture [previewLoadFile]="previewLoadFile" [noImageAvaible]="true"></app-profile-picture>
+      </div>
+    </div>
+
+
+
+
+
   </fieldset>
 
   <fieldset class="fieldset private-info">

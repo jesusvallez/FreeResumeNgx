@@ -23,21 +23,6 @@ h2, h3, h4 {
   font-weight: 100;
 }
 
-.profile-image {
-  border: 2px solid $white;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  width: 140px;
-  height: 140px;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .profile-image {
-    width: 120px;
-    height: 120px;
-  }
-}
-
 @media print {
   :host {
     background-color: transparent;
@@ -45,9 +30,5 @@ h2, h3, h4 {
 
   h1, h2, h3, h4 {
     color: $print-dark;
-  }
-
-  .profile-image {
-    border: 1px solid $print-dark;
   }
 }

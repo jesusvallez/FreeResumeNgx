@@ -1,9 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { PublicInfoComponent } from './public-info.component'
-import { ConcatHtmlPipe } from 'src/app/pipes/concatHtml/concat-html.pipe'
-import { SafeHtmlPipe } from 'src/app/pipes/safeHtml/safe-html.pipe'
-import { SafeUrlPipe } from 'src/app/pipes/safeUrl/safe-url.pipe'
+import { ConcatHtmlPipe } from '@app/pipes/concatHtml/concat-html.pipe'
+import { SafeHtmlPipe } from '@app/pipes/safeHtml/safe-html.pipe'
+import { SafeUrlPipe } from '@app/pipes/safeUrl/safe-url.pipe'
 
 describe('ProfileComponent', () => {
   let component: PublicInfoComponent

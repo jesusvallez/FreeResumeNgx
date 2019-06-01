@@ -67,3 +67,22 @@
   }
 }
 
+.profile {
+  .container {
+    display: flex;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 200px);
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 import { ProfileComponent } from './profile.component'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { SharedModule } from '@app/modules/shared/shared.module'
 
 describe('ProfileComponent', () => {
   let component: ProfileComponent
@@ -8,8 +9,8 @@ describe('ProfileComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ FontAwesomeModule ],
-      declarations: [ ProfileComponent ]
+      declarations: [ ProfileComponent ],
+      imports: [ FontAwesomeModule, SharedModule ]
     })
     .compileComponents()
   }))

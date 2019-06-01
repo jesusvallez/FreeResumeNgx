@@ -4,7 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms'
 
 import { GenerateViewRoutingModule } from './generate-view.routing'
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component'
-import { MaterialModule } from '../material/material.module'
+import { MaterialModule } from '@app/modules/material/material.module'
+import { SharedModule } from '@app/modules/shared/shared.module'
 
 @NgModule({
   declarations: [ReactiveFormComponent],
@@ -12,7 +13,8 @@ import { MaterialModule } from '../material/material.module'
     CommonModule,
     ReactiveFormsModule,
     GenerateViewRoutingModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ]
 })
 export class GenerateViewModule { }

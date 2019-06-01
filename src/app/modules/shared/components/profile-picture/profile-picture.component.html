@@ -1,0 +1,9 @@
+<ng-container *ngIf="photo || previewLoadFile; then photoTemplate; else noImageAvaibleTemplate"></ng-container>
+
+<ng-template #photoTemplate>
+  <img class="profile-picture" [src]="photo || previewLoadFile" alt="cv"/>
+</ng-template>
+
+<ng-template #noImageAvaibleTemplate>
+  <img *ngIf="noImageAvaible" class="profile-picture" [src]="urlNoImageAvaible" alt="no-image"/>
+</ng-template>

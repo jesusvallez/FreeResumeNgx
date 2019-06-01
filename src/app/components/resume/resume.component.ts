@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
-import { JSONObject } from 'src/app/interfaces/json.interface'
-import { InfoService } from 'src/app/services/info.service'
+import { JSONObject } from '@app/interfaces/json.interface'
+import { InfoService } from '@app/services/info.service'
 
 @Component({
   selector: 'app-resume',

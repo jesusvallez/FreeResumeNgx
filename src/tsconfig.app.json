@@ -5,13 +5,12 @@
     "types": [
       "node"
     ],
+    "baseUrl": "./",
     "paths": {
-      "@app/*": [
-        "app/*"
-      ],
-      "core-js/es7/reflect": [
-        "./node_modules/core-js/proposals/reflect-metadata"
-      ]
+      "@app/*": ["app/*"],
+      "@shared/*": ["app/modules/shared/components/*"],
+      "core-js/es7/reflect": ["../node_modules/core-js/proposals/reflect-metadata"],
+      "core-js/es6/": ["./node_modules/core-js/es/"]
     }
   },
   "exclude": [

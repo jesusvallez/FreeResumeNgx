@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { PrivateInfoInterface } from 'src/app/interfaces/privateInfo.interface'
+import { PrivateInfoInterface } from '@app/interfaces/privateInfo.interface'
 
 @Component({
   selector: 'app-private-info',
