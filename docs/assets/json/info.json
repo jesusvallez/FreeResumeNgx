@@ -74,7 +74,6 @@
         ],
         "title": "Integer ultrices"
       },
-
       "job": "Phasellus fermentum erat eget",
       "date": "01/2017 – Present",
       "company": "Duis convallis ante vitae augue vulputate",
@@ -102,10 +101,13 @@
       ]
     },
     {
-      "icon": [
-        "fas",
-        "pencil-alt"
-      ],
+      "head": {
+        "icon": [
+          "fas",
+          "pencil-alt"
+        ],
+        "title": "Lorem, ipsum dolor"
+      },
       "title": "sit amet viverra enim efficitur",
       "job": "Donec vehicula felis vehicula",
       "date": "11/2016 - Present",
@@ -115,10 +117,13 @@
       ]
     },
     {
-      "icon": [
-        "fa",
-        "graduation-cap"
-      ],
+      "head": {
+        "icon": [
+          "fas",
+          "graduation-cap"
+        ],
+        "title": "hendrerit imperdiet"
+      },
       "title": "Pellentesque sed arcu eleifend",
       "job": "Etiam pharetra urna nec posuere hendrerit",
       "date": "09/2009 - 01/2015",

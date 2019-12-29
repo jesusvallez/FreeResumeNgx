@@ -11,7 +11,7 @@ export class ProfileComponent implements OnInit {
 
   remoteImg = true
   webp: string
-  jpg: string
+  noWebp: string
 
   constructor() {}
 
@@ -23,20 +23,17 @@ export class ProfileComponent implements OnInit {
     if (this.profile && !this.isARemoteURL(this.profile.photo)) {
       this.remoteImg = false
 
-      if (this.profile && this.profile.photo) {
-        const pathSplitted = this.profile.photo.split('.')
-        if (pathSplitted.length > 0) {
-          pathSplitted.pop()
-        }
-        const pathWithoutExtension = pathSplitted.join('.')
-        this.webp = pathWithoutExtension + '.webp'
-        this.jpg = pathWithoutExtension + '.jpg'
-      }
+      const pathSplitted = this.profile.photo.split('.')
+      const extesion = pathSplitted.pop()
+      const pathWithoutExtension = pathSplitted.join('.')
+
+      this.webp = `${pathWithoutExtension}.webp`
+      this.noWebp = `${pathWithoutExtension}.${extesion}`
     }
   }
 
   isARemoteURL(string) {
-    const regex = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/
+    const regex = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)\.(?:jpg|png)/
     return regex.test(string)
   }
 }

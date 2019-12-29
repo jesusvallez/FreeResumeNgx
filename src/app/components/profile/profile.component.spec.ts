@@ -43,7 +43,7 @@ describe('ProfileComponent', () => {
 
     expect(component.remoteImg).toBeFalse()
     expect(component.webp).toBe('assets/photo.webp')
-    expect(component.jpg).toBe('assets/photo.jpg')
+    expect(component.noWebp).toBe('assets/photo.jpg')
   })
 
   it('checkImageIsRemoteOrLocal remoteAsset', () => {
@@ -59,7 +59,7 @@ describe('ProfileComponent', () => {
 
     expect(component.remoteImg).toBeTrue()
     expect(component.webp).toBeUndefined()
-    expect(component.jpg).toBeUndefined()
+    expect(component.noWebp).toBeUndefined()
   })
 
   it('isARemoteURL is working correctly', () => {

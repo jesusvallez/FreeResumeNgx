@@ -4,8 +4,8 @@
 <ng-template #localImg>
   ​<picture class="border">
     <source class="profile-image" type="image/webp" [srcset]="webp" alt="cv" />
-    <source class="profile-image" type="image/jpeg" [srcset]="jpg" alt="cv" />
-    <img class="profile-image" [src]="jpg" alt="cv" />
+    <source class="profile-image" [srcset]="noWebp" alt="cv" />
+    <img class="profile-image" [src]="noWebp" alt="cv" />
   </picture>
 </ng-template>
 
