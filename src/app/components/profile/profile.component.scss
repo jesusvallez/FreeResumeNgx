@@ -1,4 +1,8 @@
-@import 'base/variables';
+@import "base/variables";
+
+$BORDER: 2;
+$IMG-WIDTH: 140;
+$IMG-WIDTH-TABLET: 120;
 
 :host {
   display: flex;
@@ -9,7 +13,10 @@
   align-items: center;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: $white;
   text-align: center;
 }
@@ -19,22 +26,33 @@ h1 {
   margin-bottom: 10px;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-weight: 100;
 }
 
-.profile-image {
-  border: 2px solid $white;
-  border-radius: 50%;
+.border {
+  border: #{$BORDER}px solid $white;
   margin-bottom: 20px;
-  width: 140px;
-  height: 140px;
+  border-radius: 50%;
+  width: #{$IMG-WIDTH + $BORDER * 2}px;
+  height: #{$IMG-WIDTH + $BORDER * 2}px;
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: #{$IMG-WIDTH-TABLET + $BORDER * 2}px;
+    height: #{$IMG-WIDTH-TABLET + $BORDER * 2}px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .profile-image {
-    width: 120px;
-    height: 120px;
+.profile-image {
+  border-radius: 50%;
+  width: #{$IMG-WIDTH}px;
+  height: #{$IMG-WIDTH}px;
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: #{$IMG-WIDTH-TABLET}px;
+    height: #{$IMG-WIDTH-TABLET}px;
   }
 }
 
@@ -43,7 +61,10 @@ h2, h3, h4 {
     background-color: transparent;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: $print-dark;
   }
 
