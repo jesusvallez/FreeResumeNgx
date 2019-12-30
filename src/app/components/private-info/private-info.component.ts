@@ -7,7 +7,7 @@ import { PrivateInfoInterface } from 'src/app/interfaces/privateInfo.interface'
   styleUrls: ['./private-info.component.scss']
 })
 export class PrivateInfoComponent {
-  @Input() public privateInfo: PrivateInfoInterface[]
+  @Input() public privateInfo: PrivateInfoInterface[] = []
 
   constructor() { }
 }
