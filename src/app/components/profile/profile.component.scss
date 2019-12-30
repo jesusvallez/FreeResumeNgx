@@ -6,11 +6,15 @@ $IMG-WIDTH-TABLET: 120;
 
 :host {
   display: flex;
-  padding: 20px 10px;
+  padding: 30px 10px 20px;
   justify-content: center;
   background-color: $primary-dark;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 0) and (max-width: 767px) {
+    padding: 20px 10px;
+  }
 }
 
 h1,
@@ -56,6 +60,32 @@ h4 {
   }
 }
 
+@media (min-width: 0) and (max-width: 767px) {
+  :host {
+    padding: 10px 10px;
+  }
+
+  .private-items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .private-item {
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    .icon {
+      width: inherit;
+      margin-left: 0;
+      margin-right: 6px;
+      text-align: center;
+    }
+  }
+}
+
 @media print {
   :host {
     background-color: transparent;
@@ -68,7 +98,7 @@ h4 {
     color: $print-dark;
   }
 
-  .profile-image {
-    border: 1px solid $print-dark;
+  .border {
+    border: #{$BORDER}px solid $print-dark;
   }
 }

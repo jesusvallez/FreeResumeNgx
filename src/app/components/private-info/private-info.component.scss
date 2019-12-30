@@ -3,26 +3,37 @@
 :host {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.private-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   padding: 20px 10px;
 }
 
 .private-item {
   display: flex;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding: 5px 0;
   align-items: center;
 
   .icon {
     color: $white;
     font-size: 20px;
     width: 40px;
-    margin-left: 15px;
     text-align: center;
   }
 
   a, p {
     color: $white;
     font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    line-height: 1.5em;
+    max-height: 3em;
   }
 
   a:hover {
@@ -33,6 +44,13 @@
 @media (min-width: 0) and (max-width: 767px) {
   :host {
     padding: 10px 10px;
+  }
+
+  .private-items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .private-item {
@@ -49,14 +67,6 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .private-item {
-    .icon {
-      margin-left: 5px;
-    }
-  }
-}
-
 @media print {
   :host {
     justify-content: center;
@@ -64,12 +74,14 @@
     background-color: transparent;
   }
 
-  .private-item {
+  .private-items {
+    padding: initial;
+  }
 
+  .private-item {
     .icon {
       font-size: 20px;
       width: 40px;
-      margin-left: 15px;
       text-align: center;
     }
 
